@@ -20,16 +20,13 @@ public class BunTest {
     @Parameterized.Parameters
     public static Object[][] getParameters() {
         return new Object[][]{
-                {new Bun("black", 15), "black", 15},
-                {new Bun("red", -1), "red", 0},
-                {new Bun("white", 1000.1f), "white",0},
-                {new Bun("ok", 150), null,150},
-                {new Bun("blackblack", 0.1f), "blackblack", 0.1f},
-                {new Bun(" red", 1000), null, 1000},
-                {new Bun("red ", 0), null, 0},
-                {new Bun("White", 999), "White", 999},
-                {new Bun("Good evening", 20), null, 20},
-
+                {new Bun("Черный хлеб", 20.05f), "Черный хлеб", 20.05f},
+                {new Bun("Черствый хлеб", -12), "Черствый хлеб", -12},
+                {new Bun("$Бесплатный$", 0), "$Бесплатный$", 0},
+                {new Bun(" red", 1000), " red", 1000},
+                {new Bun("black bun", 99.88f), "black bun", 99.88f},
+                {new Bun("white bun", 200), "white bun", 200},
+                {new Bun("red bun", 300), "red bun", 300}
         };
     }
     @Test
