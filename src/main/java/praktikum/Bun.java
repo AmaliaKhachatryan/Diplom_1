@@ -14,18 +14,9 @@ public class Bun {
         this.price = price;
     }
     public String getName() {
-        if((name.length() <= 2)
-               || (name.length() > 10)
-                || name.startsWith(" ")
-                || name.endsWith(" ")
-                ){
-        return null;
-    }return name;
+        return name;
     }
     public float getPrice() {
-        if (price<0 || price>1000){
-            return 0;
-        }
         return price;
     }
 }

@@ -6,7 +6,6 @@ package praktikum;
  * У ингредиента есть тип (начинка или соус), название и цена.
  */
 public class Ingredient {
-
     public IngredientType type;
     public String name;
     public float price;
@@ -18,18 +17,10 @@ public class Ingredient {
     }
 
     public String getName() {
-        if((name.length() <= 2)
-                || (name.length() > 15)
-                || name.startsWith(" ")
-                || name.endsWith(" ")
-        ){
-            return null;
-        }return name;
+        return name;
     }
+
     public float getPrice() {
-        if (price<0 || price>1000){
-            return 0;
-        }
         return price;
     }
 

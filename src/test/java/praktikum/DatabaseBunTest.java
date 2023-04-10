@@ -17,7 +17,6 @@ public class DatabaseBunTest {
         this.name = name;
         this.price = price;
     }
-
     @Parameterized.Parameters
     public static Object[][] getParameters() {
         return new Object[][]{{0, "black bun", 100},
