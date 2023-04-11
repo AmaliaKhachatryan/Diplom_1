@@ -106,44 +106,4 @@ public class BurgerMockTest {
         Assert.assertFalse(burger.getReceipt().contains("Black bun"));
         Assert.assertTrue(burger.getReceipt().contains("Red bun"));
     }
-
-    @Mock
-    Burger burgerMock;
-
-    @Test
-    public void CheckGetReceiptMethodIsCalledOnceTest() {
-        burgerMock.getReceipt();
-        Mockito.verify(burgerMock, Mockito.times(1)).getReceipt();
-    }
-
-    @Test
-    public void CheckGetPriceMockVerifyOneTimeTest() {
-        burgerMock.getPrice();
-        Mockito.verify(burgerMock, Mockito.times(1)).getPrice();
-
-    }
-
-    @Test
-    public void CheckGetReceiptMMethodIsCalledThreeTest() {
-        burgerMock.getReceipt();
-        burgerMock.getReceipt();
-        burgerMock.getReceipt();
-        Mockito.verify(burgerMock, Mockito.times(3)).getReceipt();
-
-    }
-
-    @Test
-    public void CheckGetPriceMethodIsCalledThreeTest() {
-        burgerMock.getPrice();
-        burgerMock.getPrice();
-        burgerMock.getPrice();
-        Mockito.verify(burgerMock, Mockito.times(3)).getPrice();
-
-    }
-
-    @Test
-    public void CheckAddIngredientMethodIsCalledOnceTest() {
-        burgerMock.addIngredient(cutlet);
-        Mockito.verify(burgerMock, Mockito.times(1)).addIngredient(cutlet);
-    }
 }

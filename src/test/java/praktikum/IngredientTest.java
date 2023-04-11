@@ -9,10 +9,10 @@ import static praktikum.IngredientType.FILLING;
 import static praktikum.IngredientType.SAUCE;
 @RunWith(Parameterized.class)
 public class IngredientTest {
-    Ingredient ingredient;
-    IngredientType expectedType;
-    String expectedName;
-    float expectedPrice;
+    private Ingredient ingredient;
+    private IngredientType expectedType;
+    private String expectedName;
+    private float expectedPrice;
 
     public IngredientTest(Ingredient ingredient, IngredientType expectedType, String expectedName, float expectedPrise) {
         this.ingredient = ingredient;
@@ -20,6 +20,7 @@ public class IngredientTest {
         this.expectedName = expectedName;
         this.expectedPrice = expectedPrise;
     }
+
     @Parameterized.Parameters
     public static Object[][] getParameters() {
         return new Object[][]{

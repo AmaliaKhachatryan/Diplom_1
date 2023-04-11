@@ -8,10 +8,10 @@ import org.junit.runners.Parameterized;
 @RunWith(Parameterized.class)
 public class DatabaseIngredientsTest {
     Database base = new Database();
-    public IngredientType type;
-    public String name;
-    public float price;
-    public int index;
+    private IngredientType type;
+    private String name;
+    private float price;
+    private int index;
 
     public DatabaseIngredientsTest(int index, IngredientType type, String name, float price) {
         this.index = index;

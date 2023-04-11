@@ -8,9 +8,9 @@ import org.junit.runners.Parameterized;
 @RunWith(Parameterized.class)
 public class DatabaseBunTest {
     Database base = new Database();
-    public String name;
-    public float price;
-    public int index;
+    private String name;
+    private float price;
+    private int index;
 
     public DatabaseBunTest(int index, String name, float price) {
         this.index = index;

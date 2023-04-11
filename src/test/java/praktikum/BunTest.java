@@ -8,8 +8,8 @@ import org.junit.runners.Parameterized;
 @RunWith(Parameterized.class)
 public class BunTest {
     Bun bun;
-    String expectedName;
-    float expectedPrice;
+    private String expectedName;
+    private float expectedPrice;
 
     public BunTest(Bun bun, String expectedName, float expectedPrice) {
         this.bun = bun;
